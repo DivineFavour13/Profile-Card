@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 1B Profile Card</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <article class="profile-card" data-testid="test-profile-card" aria-labelledby="profile-name">
+      <header class="profile-header">
+        <figure class="avatar-wrap">
+          <img
+            class="avatar"
+            data-testid="test-user-avatar"
+            src="profile-pic.jpeg"
+            alt="Portrait of Ugochukwu Divine Favour, with short curly hair wearing a light blue shirt, standing in front of a blurred outdoor background with greenery and sunlight."
+            loading="lazy"
+            width="320"
+            height="320"
+          >
+        </figure>
+
+        <div class="profile-intro">
+          <p class="eyebrow">Product-minded Frontend Developer</p>
+          <h2 id="profile-name" class="profile-name" data-testid="test-user-name">Ugochukwu Divine Favour</h2>
+          <p class="bio" data-testid="test-user-bio">
+            Frontend engineer based in Lagos, building clean, responsive interfaces with strong attention to detail, accessibility, and user experience.
+          </p>
+
+          <div class="time-block">
+            <span class="time-label">Current epoch time</span>
+            <p class="time-value" data-testid="test-user-time" aria-live="polite"></p>
+          </div>
+
+          <nav class="social-links" data-testid="test-user-social-links" role="navigation" aria-label="Ugochukwu Divine Favour social links">
+            <a
+              href="https://x.com/favour61514"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+            >
+              Twitter
+            </a>
+            <a
+              href="https://github.com/DivineFavour13"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/divine-favour-ugochukwu-947329388"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+            >
+              LinkedIn
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="details-grid">
+        <section class="detail-card" aria-labelledby="hobbies-heading">
+          <h2 id="hobbies-heading">Hobbies</h2>
+          <ul data-testid="test-user-hobbies">
+            <li>Designing UI concepts for side projects</li>
+            <li>Listening to live soul playlists</li>
+            <li>Exploring CSS layout techniques and animations</li>
+            <li>Weekend Gaming and Afternoon walks to let off some steam</li>
+          </ul>
+        </section>
+
+        <section class="detail-card" aria-labelledby="dislikes-heading">
+          <h2 id="dislikes-heading">Dislikes</h2>
+          <ul data-testid="test-user-dislikes">
+            <li>Cluttered layouts that hide important actions</li>
+            <li>Slow apps with confusing loading states</li>
+            <li>Unclear UX copy that leaves users guessing</li>
+            <li>Poor contrast that makes text hard to read</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <script src="Script.js"></script>
+</body>
+</html>
